@@ -19,7 +19,7 @@ var convertTableToList = function(table){
         });
     }
 
-    $.each( $(table).find('tbody tr'), function(j, row){
+    $.each( $(table).find('tbody tr:not(.ignore)'), function(j, row){
 
         // if cols count not set, set it now
         colsCount = (!colsCount) ? $(row).find('td').length : colsCount;
@@ -33,6 +33,8 @@ var convertTableToList = function(table){
             }
         });
     });
+
+    console.log(titles);
 
    
     for(var i = 0; i < titles.length; i ++){

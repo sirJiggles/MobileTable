@@ -34,9 +34,6 @@ var convertTableToList = function(table){
         });
     });
 
-    console.log(titles);
-
-   
     for(var i = 0; i < titles.length; i ++){
 
         if(thead){

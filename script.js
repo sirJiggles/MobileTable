@@ -1,9 +1,9 @@
 var convertTableToList = function(table){
 
     var listString = '',
-    dts = new Array(),
-    dds = new Array(),
-    titles = new Array(),
+    dts = [],
+    dds = [],
+    titles = [],
     className = '',
     colsCount = false,
     thead = ( $(table).find('thead').length > 0 ) ? true : false,
